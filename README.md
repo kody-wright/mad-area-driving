@@ -1,2 +1,2 @@
 # mad-area-driving
-Recreation of Mad Area Driving webiste
+Recreation of Mad Area Driving website
