@@ -527,4 +527,7 @@ input.form-control {
   border-color: var(--brand);
 }
 
-
+.list-group-item {
+display: flex;
+justify-content: space-between;
+}
