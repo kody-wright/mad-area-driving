@@ -54,52 +54,83 @@ and weaknesses. To provide each student with the
    
     <h1>Mad Area driving school</h1>
 <p>Just a small peek at what a driving school looks like:</p>
-<div class="card">
-  <img src="https://i.postimg.cc/nHWSTnmH/bob-1.jpg"alt="Avatar" style="width:25%">
-  <div class="container">
-    <h4><b>Bob Smith:Driving Instructor</b></h4>
-    <p>The duties and responsibilities of Bob Smith are to manage the theory class timings, teach the driving students about the right traffic rules and inform student drivers with safety driving procedures. In addition to that, he will supply their students with information about emergency situations.</p>
-</div>
 
-      
-      
+<div class="slideshow-container">
+        
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="https://i.postimg.cc/nHWSTnmH/bob-1.jpg" style="width:100%">
+    <div class="text"><b>Bob Smith:Driving Instructor</b></div>
+    
+
+
+  </div>
   
-
-      
-    <div class="card">
-      <img src="https://i.postimg.cc/NgFP1K5J/classroom.jpg" alt="Avatar" style="width:25%">
-      <div class="container">
-        <h4><b>Shiela Ross:Classroom Instructor</b></h4>
-        <p>Shiela Ross is certified to instruct students on skills related to operating vehicles, including driving safety. These formal lessons will prepare students for their first driver's license or can be for specializations for other types of vehicles like trucks, limousines, busses and motorcycles</p>
-      </div>
-    
-    
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="https://i.postimg.cc/NgFP1K5J/classroom.jpg"  style="width:100%">
+    <div class="text"></div>
+  </div>
   
-    <div class="card">
-      <img src="https://i.postimg.cc/wzSbmTH2/thumbs-up.jpg" alt="Avatar" style="width:25%">
-      <div class="container">
-        <h4><b>Samantha Doe:Recent Graduate</b></h4>
-        <p>Helpful class structure. “Behind-the-wheel” training was helpful in gradually exposing you to the roads and the traffic that comes with them. Instructors are kind and easily approachable when students have questions.</p>
-      </div>
-   
-    <div class="card">
-      <img src="https://i.postimg.cc/dJDLfb8J/pexels-photo.webp" alt="Avatar" style="width:25%">
-      <div class="container">
-        <h4><b>Jim Roe:Current Student</b></h4>
-        <p>This is the best Driving School I’ve ever been to I love it the instructors they’re very patient. Professional understanding and help me gain my confidence of driving</p>
-    </div>
-    
-
-
-<address>
-<a href="mailto: madareadriving@gmail.com"></a>
- <br>
-    
-
-  <hr>
-    <p class="email" Alternate email is ><a href="mailto:jkapinus@madareadriving.com"</a>
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="https://i.postimg.cc/XYR4TGCN/pexels-katerina-holmes-5905483.jpg" style="width:100%">
+    <div class="text">Shiela Ross:Classroom Instructor</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="https://i.postimg.cc/wzSbmTH2/thumbs-up.jpg" style="width:100%">
+    <div class="text">Shiela Ross:Classroom Instructor</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="https://i.postimg.cc/dJDLfb8J/pexels-photo.webp" style="width:100%">
+        <div class="text">Samantha Doe:Recent Graduate</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="https://i.postimg.cc/K8zDd4yW/pexels-rodnae-productions-8419627.jpgstyle="width:100%">
+        <div class="text">Jane Roe:Current Student</div>
+  </div>
   
-
-</section>
-</about-section>
-<div class="container">
+  
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+  
+  </div>
+  <br>
+  
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+  </div>
+  
+  <script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+  }
+  </script>
