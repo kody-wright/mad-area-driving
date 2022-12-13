@@ -1,0 +1,129 @@
+ <body>
+      <div class="about-section">
+        
+      <main>
+        <section class="header">
+        <header class="hero">
+            
+            <h1 class="glow">Our Mission Statement</h1>
+          </header>
+          
+           
+          </div>
+            <p class="subtitle">
+              Mad Area driving school uses years of experience 
+  and innovation to educate students and families alike in 
+  order to save lives and reduce injuries through 
+  organized curriculum, family involvement, 
+  and professional instruction. Our mission is to provide
+   each student with the necessary information and 
+  techniques to be a SAFE RESPONSIBLE DRIVER. 
+  To provide a learning friendly environment that meets
+   the needs of each student’s learning style. 
+  To recognize and understand each student’s strengths 
+  and weaknesses. To provide each student with the
+   proper training so they can obtain an Indiana driver’s license.
+   To provide the motoring public with <strong>SAFE RESPONSIBLE DRIVERS</strong>.
+            </p>
+         
+  <section class="text">
+    <div class="header-inner">
+      <h1></h1>
+          <p class="second-paragraph">
+            <title>Our Story</title>
+           
+          <h2> Mad Area Driving School is a well-renowned driving school which is conveniently located in Madison,Wi.</h2>
+  <p>The school has both DPI an d DOT certified driving instructors. You can use their licensed and insured vehicle for the road skills test. They start with the basics and move through the more complex aspects of operating a motor vehicle. More advanced sessions will teach you techniques on emergency avoidance and how to prevent potential conflicts. They offer pickup and drop-off at home or work after behind-the-wheel training. Customers can get 30 hours of online classroom instruction and behind-the-wheel training at Mad Area Driving School <em>for only $570</em>!
+  </p>
+  <br>
+  <!-- ======= who are we  Section ======= -->
+  <section id="current" class="who are we-bg">
+    <div class="container" data-aos="fade-up">
+  
+      <div class="section-title">
+        <h2 class="glow">Introducing</h2>
+      </div>
+      
+     
+      <h1>Mad Area driving school</h1>
+  <p>Just a small peek at what a driving school looks like:</p>
+  
+  <div class="slideshow-container">
+          
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="https://i.postimg.cc/nHWSTnmH/bob-1.jpg" style="width:50%" class="center">
+      <div class="text"><b>Bob Smith:Driving Instructor</b></div>
+      
+  
+  
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="https://i.postimg.cc/NgFP1K5J/classroom.jpg"  style="width:50%" class="center">
+      <div class="text">Sandy Frasier:Prep for Pretest Instructor</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="https://i.postimg.cc/XYR4TGCN/pexels-katerina-holmes-5905483.jpg" style="width:50%" class="center">
+      <div class="text">Shiela Ross:Classroom Instructor</div>
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="https://i.postimg.cc/wzSbmTH2/thumbs-up.jpg" style="width:50%" class="center">
+      <div class="text">Miranda Johnson:Recent Graduate</div>
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="https://i.postimg.cc/dJDLfb8J/pexels-photo.webp" style="width:50%" class="center">
+          <div class="text">Samantha Doe:Recent Graduate</div>
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="https://i.postimg.cc/K8zDd4yW/pexels-rodnae-productions-8419627.jpg"style="width:50%" class="center">
+          <div class="text">Jane Roe:Current Student</div>
+    </div>
+    
+    
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+    
+    <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
