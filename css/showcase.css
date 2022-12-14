@@ -7,6 +7,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
 
+
 *{
     margin: 0;
     padding: 0;
@@ -31,11 +32,12 @@ body{
     left: 0;
 }
 
-.offscreen{
+
+/* .offscreen{
     position: absolute;
     top:0;
     left: -1200;
-}
+} */
 
 /*.container{
     position: absolute;
@@ -87,10 +89,13 @@ body{
 }
 
 .intro{
-    position: relative;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
     max-height: 100vh;
     overflow: hidden;
-    background: url("media/tail-lights-1241171_1280.jpg") center no-repeat;
+    background: url("") center no-repeat;
     background-size: cover;
 }
 
@@ -202,14 +207,20 @@ body{
     
 
 @media only screen and (max-width: 575px){
+    .intro{
+        position: relative;
+        background: url("/tail-lights-1241171_1280.jpg") center no-repeat;
+    }
+    
     .video-media{
         display: none;
+        z-index: 0;
     }
 
     .picture-media{
         width: 100%;
         height: auto;
-        position: absolute;
+        position: relative;
         top: 0;
         left: 0;
     }
